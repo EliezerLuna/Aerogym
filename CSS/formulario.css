@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://via.placeholder.com/1200x800') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .container__header {
+    margin-bottom: 20px;
+  }
+  
+  .container__title {
+    color: #8f282c; /* Rojo */
+  }
+  
+  .container__subtitle {
+    color: #59467d; /* Azul/Morado */
+  }
+  
+  .container__forms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .forms__divider {
+    width: 2px;
+    background-color: #807f85; /* Gris */
+    height: auto;
+    align-self: stretch;
+  }
+  
+  .forms__form {
+    background-color: #ffffff; /* Blanco */
+    border: 1px solid #807f85; /* Gris */
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .forms__title {
+    color: #8f282c; /* Rojo */
+    margin-bottom: 15px;
+  }
+  
+  .forms__label {
+    display: block;
+    margin-bottom: 5px;
+    color: #59467d; /* Azul/Morado */
+  }
+  
+  .forms__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #807f85; /* Gris */
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .forms__button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8f282c; /* Rojo */
+    color: #ffffff; /* Blanco */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .forms__button:hover {
+    background-color: #59467d; /* Azul/Morado */
+  }
+  
+  .forms__terms {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #59467d; /* Azul/Morado */
+    margin-bottom: 15px;
+  }
+  
+  .forms__checkbox {
+    margin-right: 10px;
+  }
+  
+  .forms__terms-label {
+    font-size: medium;
+  }
+  
+  .forms__link {
+    color: #8f282c; /* Rojo */
+    text-decoration: none;
+  }
+  
+  .forms__link:hover {
+    text-decoration: underline;
+  }
+  
+  .forms__footer {
+    color: #59467d; /* Azul/Morado */
+    font-size: 14px;
+    text-align: center;
+  }
+  
