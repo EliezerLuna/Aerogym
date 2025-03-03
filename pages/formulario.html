@@ -1,52 +1,62 @@
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aerogym2000</title>
-    <link rel="stylesheet" href="../css/inscripcion.css">
-</head>
-<body>
-    <form action="">
-        <fieldset>
-            <legend>Inscripción Aerogym2000</legend>
-                <label for="">Fecha inscripcion</label>
-                <input type="date">
-            <fieldset>
-                <legend>Datos personales</legend>
-                <label for="">Nombre</label>
-                <input type="text">
-                <label for="">Apellido1</label>
-                <input type="text">
-                <label for="">Apellido2</label>
-                <input type="text">
-                <label for="">Sexo</label>
-                <select name="" id="">
-                    <option value=""selected disabled>Seleccione un sexo</option>
-                    <option value="">Hombre</option>
-                    <option value="">Mujer</option>
-                    <option value="">No definido</option>
-                </select>
-                <label for="">DNI/NIE</label>
-                <input type="text">
-                <label for="">Fecha de nacimiento</label>
-                <input type="date">
-                <label for="">Móvil</label>
-                <input type="text">
-                <label for="">Córreo electrónico</label>
-                <input type="email">
-            </fieldset>
-            <fieldset>
-                <legend>Datos del Domicilio</legend>
-                <label for="">Dirección</label>
-                <input type="text">
-                <label for="">Localidad</label>
-                <input type="text">
-                <label for="">Provincia</label>
-                <input type="text">
-                <label for="">Código postal</label>
-                <input type="text">
-            </fieldset>
-        </fieldset>
-    </form>
-</body>
+    <link rel="stylesheet" href="../CSS/formulario.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header class="container__header">
+        <h1 class="container__title">Bienvenido</h1>
+        <p class="container__subtitle">Selecciona una opción para continuar</p>
+      </header>
+      <section class="container__forms forms">
+        <article class="forms__form forms__form--registro">
+          <h2 class="forms__title">Registro</h2>
+          <form class="forms__form-content">
+            <label for="nombre" class="forms__label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="forms__input" placeholder="Introduce tu nombre" required />
+
+            <label for="apellidos" class="forms__label">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" class="forms__input" placeholder="Introduce tus apellidos" required />
+
+            <label for="usuario" class="forms__label">Usuario</label>
+            <input type="text" id="usuario" name="usuario" class="forms__input" placeholder="Elige un nombre de usuario" required />
+
+            <label for="password" class="forms__label">Contraseña</label>
+            <input type="password" id="password" name="password" class="forms__input" placeholder="Introduce tu contraseña" required />
+
+            <label for="confirm-password" class="forms__label">Confirmar Contraseña</label>
+            <input type="password" id="confirm-password" name="confirm-password" class="forms__input" placeholder="Confirma tu contraseña" required />
+
+            <section class="forms__terms">
+              <input type="checkbox" id="terminos" name="terminos" class="forms__checkbox" required />
+              <label for="terminos" class="forms__terms-label">Acepto los <a href="#" class="forms__link">Términos y Condiciones</a></label>
+            </section>
+
+            <button type="submit" class="forms__button">Registrar</button>
+          </form>
+        </article>
+
+        <div class="forms__divider"></div>
+
+        <article class="forms__form forms__form--login">
+          <h2 class="forms__title">Inicia Sesión</h2>
+          <form class="forms__form-content">
+            <label for="email" class="forms__label">Correo Electrónico</label>
+            <input type="email" id="email" name="email" class="forms__input" placeholder="ejemplo@correo.com" required />
+
+            <label for="password-login" class="forms__label">Contraseña</label>
+            <input type="password" id="password-login" name="password-login" class="forms__input" placeholder="Introduce tu contraseña" required />
+
+            <button type="submit" class="forms__button">Ingresar</button>
+          </form>
+          <p class="forms__footer">
+            ¿No tienes cuenta? <a href="#" class="forms__link" onclick="document.getElementById('nombre').focus();">Regístrate aquí</a>
+          </p>
+        </article>
+      </section>
+    </section>
+  </body>
 </html>
