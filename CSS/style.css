@@ -5,6 +5,7 @@ body {
 }
 
 .header {
+    z-index: 999;
     position: sticky;
     top: 0px;
     display: flex;
