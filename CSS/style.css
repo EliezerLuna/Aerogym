@@ -86,7 +86,49 @@ body {
 .button:hover {
     background-color: #807f85;
 }
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 
+.logos{
+    overflow: hidden;
+    padding: 10px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos img{
+    width:250px;
+    height: 100px;
+}
+
+.logos:before,
+.logos:after{
+    position: absolute;
+    z-index: 2;
+}
+
+.logos:before{
+    left: 0;
+}
+
+.logos:after{
+    right: 0;
+}
+
+.logos:hover .logos_slide{
+    animation-play-state: paused;
+}
+
+.logos_slide{
+    display: inline-block;
+    animation:200s slide infinite linear;
+}
 .footer {
     background: linear-gradient(to bottom, #4271d8, #59467d);
     color: #ffffff;
