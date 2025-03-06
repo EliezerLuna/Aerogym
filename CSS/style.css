@@ -92,7 +92,7 @@ body {
 
 .footer {
     background: linear-gradient(to bottom, #4271d8, #59467d);
-    color: #ffffff;
+    color: #000;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -125,5 +125,9 @@ body {
 
 .footer__link {
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
+}
+
+.footer__link:hover {
+    color: #8f282c;
 }
