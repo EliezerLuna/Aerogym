@@ -41,7 +41,9 @@ body {
     background: linear-gradient(to bottom, #59467d, #a6a5ab);
     transition: all 0.8s;
 }
-
+.header.scrolled img{
+    width: 150px;
+} 
 .nav {
     display: flex;
     align-items: center;
