@@ -1,7 +1,7 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0 auto;
-    background-color: #a6a5ab;
+    background-color: #fff;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px 50px;
-    background-color: transparent;
+    background-color: linear-gradient(to bottom, #59467d8d, #4271d88d);
     transition: all 0.8s;
 }
 .header__content {
@@ -38,7 +38,7 @@ body {
 }
 
 .header.scrolled{
-    background: linear-gradient(to bottom, #59467d, #a6a5ab);
+    background: linear-gradient(to bottom, #59467d, #4271d8);
     transition: all 0.8s;
 }
 .header.scrolled img{
@@ -81,7 +81,7 @@ body {
 }
 
 .footer {
-    background: linear-gradient(to bottom, #a6a5aba8, #59467d);
+    background: linear-gradient(to bottom, #4271d8, #59467d);
     color: #ffffff;
     padding: 20px 50px;
     display: flex;
