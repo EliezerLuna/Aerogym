@@ -19,7 +19,7 @@ body {
     align-items: center;
     padding: 15px 50px;
     background-color: linear-gradient(to bottom, #59467d8d, #4271d88d);
-    transition: all 0.8s;
+    transition: all 1.5s;
 }
 .header__content {
     max-width: 1800px;
@@ -39,7 +39,7 @@ body {
 
 .header.scrolled{
     background: linear-gradient(to bottom, #59467d, #4271d8);
-    transition: all 0.8s;
+    transition: all 1.5s;
 }
 .header.scrolled img{
     width: 150px;
