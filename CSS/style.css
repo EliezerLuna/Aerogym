@@ -18,7 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px 50px;
-    background: linear-gradient(to bottom, #59467d, #a6a5ab);
+    background-color: transparent;
+    transition: all 0.8s;
 }
 .header__content {
     max-width: 1800px;
@@ -34,6 +35,11 @@ body {
 
 .header__logo img {
     width: 100%;
+}
+
+.header.scrolled{
+    background: linear-gradient(to bottom, #59467d, #a6a5ab);
+    transition: all 0.8s;
 }
 
 .nav {
