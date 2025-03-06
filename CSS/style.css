@@ -5,11 +5,11 @@ body {
 }
 
 .container {
-    max-width: 1800px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
 }
+
 .header {
     text-align: center;
     position: sticky;
@@ -21,6 +21,7 @@ body {
     background-color: linear-gradient(to bottom, #59467d8d, #4271d88d);
     transition: all 1.5s;
 }
+
 .header__content {
     max-width: 1800px;
     width: 100%;
@@ -41,9 +42,11 @@ body {
     background: linear-gradient(to bottom, #59467d, #4271d8);
     transition: all 1.5s;
 }
+
 .header.scrolled img{
     width: 150px;
 } 
+
 .nav {
     display: flex;
     align-items: center;
@@ -62,8 +65,12 @@ body {
 
 .nav__link {
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
     font-weight: bold;
+}
+
+.nav__link:hover {
+    color: #8f282c;
 }
 
 .button {
@@ -118,10 +125,11 @@ body {
     color: #ffffff;
 }
 
-main {
+.main_container {
+    padding: 75px 0;
     min-height: 100px;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1920px;
     text-align: center;
     background-color: #ebebeb;
 }
