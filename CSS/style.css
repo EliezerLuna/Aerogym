@@ -3,11 +3,13 @@ body {
     margin: 0 auto;
     background-color: #fff;
 }
-
-.container {
-    max-width: 1920px;
-    width: 100%;
+/**/
+.main_container {
+    min-height: 100px;
     margin: 0 auto;
+    max-width: 1920px;
+    text-align: center;
+    background-color: #ebebeb;
 }
 
 .header {
@@ -20,6 +22,7 @@ body {
     padding: 15px 50px;
     background-color: linear-gradient(to bottom, #59467d8d, #4271d88d);
     transition: all 1.5s;
+    z-index: 999;
 }
 
 .header__content {
@@ -44,8 +47,8 @@ body {
 }
 
 .header.scrolled img{
-    width: 150px;
-} 
+    width: 200px;
+}
 
 .nav {
     display: flex;
@@ -86,49 +89,7 @@ body {
 .button:hover {
     background-color: #807f85;
 }
-@keyframes slide{
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-}
 
-.logos{
-    overflow: hidden;
-    padding: 10px;
-    white-space: nowrap;
-    position: relative;
-}
-
-.logos img{
-    width:250px;
-    height: 100px;
-}
-
-.logos:before,
-.logos:after{
-    position: absolute;
-    z-index: 2;
-}
-
-.logos:before{
-    left: 0;
-}
-
-.logos:after{
-    right: 0;
-}
-
-.logos:hover .logos_slide{
-    animation-play-state: paused;
-}
-
-.logos_slide{
-    display: inline-block;
-    animation:200s slide infinite linear;
-}
 .footer {
     background: linear-gradient(to bottom, #4271d8, #59467d);
     color: #ffffff;
@@ -165,13 +126,4 @@ body {
 .footer__link {
     text-decoration: none;
     color: #ffffff;
-}
-
-.main_container {
-    padding: 75px 0;
-    min-height: 100px;
-    margin: 0 auto;
-    max-width: 1920px;
-    text-align: center;
-    background-color: #ebebeb;
 }
