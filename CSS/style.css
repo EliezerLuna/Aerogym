@@ -90,6 +90,46 @@ body {
     background-color: #807f85;
 }
 
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.logos{
+    overflow: hidden;
+    padding: 10px;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos img{
+    width:250px;
+    height: 130px;
+}
+
+.logos:before,
+.logos:after{
+    position: absolute;
+    z-index: 2;
+}
+
+.logos:before{
+    left: 0;
+}
+
+.logos:after{
+    right: 0;
+}
+
+.logos_slide{
+    display: inline-block;
+    animation:50s slide infinite linear;
+}
+
 .footer {
     background: linear-gradient(to bottom, #4271d8, #59467d);
     color: #000;
