@@ -3,6 +3,7 @@ body {
     margin: 0 auto;
     background-color: #fff;
 }
+
 /**/
 .main_container {
     min-height: 100px;
@@ -20,7 +21,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px 50px;
-    background-color: linear-gradient(to bottom, #59467d8d, #4271d88d);
     transition: all 1.5s;
     z-index: 999;
 }
@@ -41,12 +41,12 @@ body {
     width: 100%;
 }
 
-.header.scrolled{
-    background: linear-gradient(to bottom, #59467d, #4271d8);
-    transition: all 1.5s;
+.header.scrolled {
+    background: #487be9;
+    transition: all 0.5s;
 }
 
-.header.scrolled img{
+.header.scrolled img {
     width: 200px;
 }
 
@@ -90,49 +90,50 @@ body {
     background-color: #807f85;
 }
 
-@keyframes slide{
-    from{
+@keyframes slide {
+    from {
         transform: translateX(0);
     }
-    to{
+
+    to {
         transform: translateX(-100%);
     }
 }
 
-.logos{
+.logos {
     overflow: hidden;
     padding: 10px;
     white-space: nowrap;
     position: relative;
 }
 
-.logos img{
-    width:250px;
+.logos img {
+    width: 250px;
     height: 130px;
 }
 
 .logos:before,
-.logos:after{
+.logos:after {
     position: absolute;
     z-index: 2;
 }
 
-.logos:before{
+.logos:before {
     left: 0;
 }
 
-.logos:after{
+.logos:after {
     right: 0;
 }
 
-.logos_slide{
+.logos_slide {
     display: inline-block;
-    animation:50s slide infinite linear;
+    animation: 50s slide infinite linear;
 }
 
 .footer {
-    background: linear-gradient(to bottom, #4271d8, #59467d);
-    color: #000;
+    background: #26427d;
+    color: #fff;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -150,7 +151,6 @@ body {
 }
 
 .footer__title {
-    text-decoration: underline;
     margin-bottom: 10px;
 }
 
@@ -165,7 +165,7 @@ body {
 
 .footer__link {
     text-decoration: none;
-    color: #000;
+    color: #fff;
 }
 
 .footer__link:hover {
