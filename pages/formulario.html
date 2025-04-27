@@ -1,119 +1,127 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aerogym2000</title>
-    <link rel="stylesheet" href="../CSS/formulario.css" />
-    <link rel="stylesheet" href="../CSS/style.css" />
-        <!-- Iconos -->
-        <link rel="stylesheet" href='../assets/icons/remixicon.css'>
-        <!-- Favicon generado en la web: https://favicon.io/favicon-generator/-->
-        <link rel="icon" href="../assets/images/favicon.ico">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aerogym2000</title>
+  <link rel="stylesheet" href="../CSS/formulario.css" />
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <!-- Iconos (copiado del examen 1)-->
+  <link rel="stylesheet" href='../assets/icons/remixicon.css'>
+  <!-- Favicon generado en la web: https://favicon.io/favicon-generator/-->
+  <link rel="icon" href="../assets/images/favicon.ico">
 
 
- 
-  </head>
 
-  <body>
-    <header class="header">
-      <section class="container header__content">
-          <aticle class="header__logo">
-              <img src="../assets/images/LogoGym-noBG.png"> </img>
-          </aticle>
-          <aticle class="nav">
-              <nav>
-                  <ul class="nav__list">
-                      <li class="nav__item"><a href="#" class="nav__link">Cuotas</a></li>
-                      <li class="nav__item"><a href="#" class="nav__link">Clases/Deportes</a></li>
-                      <li class="nav__item"><a href="#" class="nav__link">Eventos</a></li>
-                      <li class="nav__item"><a href="#" class="nav__link">Sobre Nosotros</a></li>
-                  </ul>
-              </nav>
-              <a href="#" class="button">Apúntate</a>
-          </aticle>
-      </section>
+</head>
+
+<body>
+  <header class="header">
+    <section class="container header__content">
+      <div class="header__logo">
+        <img src="../assets/images/LogoGym-noBG.png"> </img>
+      </div>
+      <div class="nav">
+        <nav>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Cuotas</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Clases/Deportes</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Eventos</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Sobre Nosotros</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="button">Apúntate</a>
+      </div>
+    </section>
   </header>
 
-    <section class="container">
-      <section class="container__forms forms">
-        <article class="forms__form forms__form--registro">
-          <h2 class="forms__title">Registro</h2>
-          <form class="forms__form-content">
-            <label for="nombre" class="forms__label">Nombre</label>
-            <input type="text" id="nombre" name="nombre" class="forms__input" placeholder="Introduce tu nombre" required />
+  <section class="container">
+    <section class="container__forms forms">
+      <article class="forms__form forms__form--registro">
+        <h2 class="forms__title">Registro</h2>
+        <form class="forms__form-content">
+          <label for="nombre" class="forms__label">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="forms__input" placeholder="Introduce tu nombre"
+            required />
 
-            <label for="apellidos" class="forms__label">Apellidos</label>
-            <input type="text" id="apellidos" name="apellidos" class="forms__input" placeholder="Introduce tus apellidos" required />
+          <label for="apellidos" class="forms__label">Apellidos</label>
+          <input type="text" id="apellidos" name="apellidos" class="forms__input" placeholder="Introduce tus apellidos"
+            required />
 
-            <label for="usuario" class="forms__label">Usuario</label>
-            <input type="text" id="usuario" name="usuario" class="forms__input" placeholder="Elige un nombre de usuario" required />
+          <label for="email" class="forms__label">Correo Electrónico</label>
+          <input type="email" id="email" name="email" class="forms__input"
+            placeholder="Introduce tu correro Electrónico" required />
 
-            <label for="password" class="forms__label">Contraseña</label>
-            <input type="password" id="password" name="password" class="forms__input" placeholder="Introduce tu contraseña" required />
+          <label for="password" class="forms__label">Contraseña</label>
+          <input type="password" id="password" name="password" class="forms__input"
+            placeholder="Introduce tu contraseña" required />
 
-            <label for="confirm-password" class="forms__label">Confirmar Contraseña</label>
-            <input type="password" id="confirm-password" name="confirm-password" class="forms__input" placeholder="Confirma tu contraseña" required />
+          <label for="confirm-password" class="forms__label">Confirmar Contraseña</label>
+          <input type="password" id="confirm-password" name="confirm-password" class="forms__input"
+            placeholder="Confirma tu contraseña" required />
 
-            <section class="forms__terms">
-              <input type="checkbox" id="terminos" name="terminos" class="forms__checkbox" required />
-              <label for="terminos" class="forms__terms-label">Acepto los <a href="#" class="forms__link">Términos y Condiciones</a></label>
-            </section>
+          <section class="forms__terms">
+            <input type="checkbox" id="terminos" name="terminos" class="forms__checkbox" required />
+            <label for="terminos" class="forms__terms-label">Acepto los <a href="#" class="forms__link">Términos y
+                Condiciones</a></label>
+          </section>
 
-            <button type="submit" class="forms__button">Registrar</button>
-          </form>
-        </article>
+          <button type="submit" class="forms__button">Registrar</button>
+        </form>
+      </article>
 
-        <div class="forms__divider"></div>
+      <div class="forms__divider"></div>
 
-        <article class="forms__form forms__form--login">
-          <h2 class="forms__title">Inicia Sesión</h2>
-          <form class="forms__form-content">
-            <label for="email" class="forms__label">Correo Electrónico</label>
-            <input type="email" id="email" name="email" class="forms__input" placeholder="ejemplo@correo.com" required />
+      <article class="forms__form forms__form--login">
+        <h2 class="forms__title">Inicia Sesión</h2>
+        <form class="forms__form-content">
+          <label for="email" class="forms__label">Correo Electrónico</label>
+          <input type="email" id="email" name="email" class="forms__input" placeholder="ejemplo@correo.com" required />
 
-            <label for="password-login" class="forms__label">Contraseña</label>
-            <input type="password" id="password-login" name="password-login" class="forms__input" placeholder="Introduce tu contraseña" required />
+          <label for="password-login" class="forms__label">Contraseña</label>
+          <input type="password" id="password-login" name="password-login" class="forms__input"
+            placeholder="Introduce tu contraseña" required />
 
-            <button type="submit" class="forms__button">Ingresar</button>
-          </form>
-          <p class="forms__footer">
-            ¿No tienes cuenta? <a href="#" class="forms__link" onclick="document.getElementById('nombre').focus();">Regístrate aquí</a>
-          </p>
-        </article>
-      </section>
+          <button type="submit" class="forms__button">Ingresar</button>
+        </form>
+        <p class="forms__footer">
+          ¿No tienes cuenta? <a href="#" class="forms__link"
+            onclick="document.getElementById('nombre').focus();">Regístrate aquí</a>
+        </p>
+      </article>
     </section>
+  </section>
 
-    <footer class="footer">
-      <sction class="container footer__content">
-            <aticle class="footer__column">
-                <h3 class="footer__title">Servicios</h3>
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Entrenamiento Personal</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Clases Grupales</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Nutrición</a></li>
-                </ul>
-            </aticle>
-            <aticle class="footer__column">
-                <h3 class="footer__title">Enlaces Útiles</h3>
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link">Términos y Condiciones</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Política de Privacidad</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link">Contacto</a></li>
-                </ul>
-            </aticle>
-            <aticle class="footer__column">
-                <h3 class="footer__title">Redes Sociales</h3>
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="#" class="footer__link"><i class="ri-facebook-circle-fill"></i>
-                            Facebook</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link"><i class="ri-instagram-line"></i>
-                            Instagram</a></li>
-                    <li class="footer__item"><a href="#" class="footer__link"><i class="ri-twitter-x-fill"></i>
-                            Twitter</a></li>
-                </ul>
-            </aticle>
-        </sction>
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__column">
+        <h3 class="footer__title">Servicios</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Entrenamiento Personal</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Clases Grupales</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Nutrición</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Enlaces Útiles</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link">Términos y Condiciones</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Política de Privacidad</a></li>
+          <li class="footer__item"><a href="#" class="footer__link">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h3 class="footer__title">Redes Sociales</h3>
+        <ul class="footer__list">
+          <li class="footer__item"><a href="#" class="footer__link"><i class="ri-facebook-circle-fill"></i> Facebook</a>
+          </li>
+          <li class="footer__item"><a href="#" class="footer__link"><i class="ri-instagram-line"></i> Instagram</a></li>
+          <li class="footer__item"><a href="#" class="footer__link"><i class="ri-twitter-x-fill"></i> Twitter</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <script src="../js/main.js"></script>
-  </body>
+</body>
+
 </html>
